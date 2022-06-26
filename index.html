@@ -1,62 +1,281 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" href="./header.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./assets/fontawesome/js/all.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/me.css" />
+    <link rel="stylesheet" href="./css/skillshobbies.css" />
+    <link rel="stylesheet" href="./css/courses.css" />
     <title>Challenge One Portfolio II</title>
-</head>
-<body class="body__container">
+  </head>
+  <body>
     <header class="header__container">
-        <div class="title__container">
-            <img src="./assets/Group.png" />
-            Fulano de tal
-        </div>
-        <nav class="menu__container">
-            contato@fulano.com
-        </nav>
+      <section class="header__content">
+        <img src="./assets/images/Group.png" alt="Logo" />
+        <spam class="header__title">Fulano de Tal</spam>
+      </section>
+      <nav class="header__navbar">
+        <ul class="navbar__itens">
+          <li class="navbar__item"><a href="#">Sobre mim</a></li>
+          <li class="navbar__item"><a href="#">Skills</a></li>
+          <li class="navbar__item"><a href="#">Hobbies</a></li>
+          <li class="navbar__item"><a href="#">Formação</a></li>
+          <li class="navbar__item"><a href="#">Projetos</a></li>
+          <li class="navbar__contact"><a href="#">antonio@alura.com</a></li>
+        </ul>
+      </nav>
     </header>
-    <section class="about__container">
-        <img src="./assets/photoMobile.png" />
-        <p class="about__title">
-            Olá, meu nome é Antonio Alves e construo paginas web
-        </p>
-        <p class="about__subtitle">
-            Eu sou formado em Licenciatura em Física e atualmente estou participando no projeto Oracle ONE na Alura.
-        </p>
-        <div class="about__links">
-            github linkedin curriculum
+    <main>
+      <section class="about">
+        <div class="about_hello">
+          <p class="about__title">
+            Olá, meu nome é Fulana de Tal e construo páginas web
+          </p>
+          <p class="about__subtitle">
+            Eu sou formada em lorem ipsum sit amet consectetur e atualmente
+            estou participando no projeto Oracle ONE na Alura.
+          </p>
+          <ul class="about__links">
+            <li class="about__link">
+              <a href="#">Github</a
+              ><i class="fa-solid fa-up-right-from-square"></i>
+            </li>
+            <li class="about__link">
+              <a href="#">Linkedin</a
+              ><i class="fa-solid fa-up-right-from-square"></i>
+            </li>
+            <li class="about__link">
+              <a href="#">Currículo</a
+              ><i class="fa-solid fa-up-right-from-square"></i>
+            </li>
+          </ul>
         </div>
-        <div class="about__text">
-            <div class="text__title">
-                Sobre mim
-            </div>
-            <div class="text__description">
-                <p>
-                    P1
-                </p>
-                <p>
-                    P2
-                </p>
-                <img src="./assets/assinatura.png" alt="Assinatura">
-            </div>
+        <div class="about__photo">
+          <img src="./assets/images/photoMobile.png" alt="Photo" class="about__img" />
         </div>
-    </section>
-    <sectio class="hobbies__container">
-        Hobbies + Soft Skills
-    </sectio>
-    <section class="courses__container">
-        Formação + Cursos
-    </section>
-    <section class="experiencies__container">
-        Experiencias em programação
-    </section>
-    <section class="contact__container">
-        Formulario de Contato
-    </section>
+      </section>
+
+      <section class="me">
+        <div class="me__container">
+          <p class="me__title">Sobre mim</p>
+          <p class="me__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque velit velit, volutpat semper dignissim dictum,
+            imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse
+            potenti. Ut semper sagittis ligula et lacinia.
+          </p>
+          <p class="me__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque velit velit, volutpat semper dignissim dictum,
+            imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse
+            potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis
+            venenatis, egestas metus vitae, aliquet metus.
+          </p>
+          <img
+            src="./assets/images/assinatura.png"
+            alt="signature"
+            class="me__signature"
+          />
+        </div>
+      </section>
+
+      <section class="skillshobbies__container">
+        <div>
+          <p class="skillshobbies__title">Skills</p>
+        </div>
+        <div class="skillshobbies__content">
+          <ul class="skillshobbies__cards">
+            <li class="skillshobbies__card">
+              <div class="skillshobbies__description">
+                <i class="fa-brands fa-html5 skillshobbies__icon"></i>
+                <p class="skillshobbies__name">HTML 5</p>
+              </div>
+            </li>
+            <li class="skillshobbies__card">
+              <div class="skillshobbies__description">
+                <i class="fa-brands fa-css3 skillshobbies__icon"></i>
+                <p class="skillshobbies__name">CSS 3</p>
+              </div>
+            </li>
+            <li class="skillshobbies__card">
+              <div class="skillshobbies__description">
+                <i class="fa-brands fa-react skillshobbies__icon"></i>
+                <p class="skillshobbies__name">React</p>
+              </div>
+            </li>
+            <li class="skillshobbies__card">
+              <div class="skillshobbies__description">
+                <i class="fa-brands fa-js skillshobbies__icon"></i>
+                <p class="skillshobbies__name">Javascript</p>
+              </div>
+            </li>
+            <li class="skillshobbies__card">
+              <div class="skillshobbies__description">
+                <i class="fa-brands fa-java skillshobbies__icon"></i>
+                <p class="skillshobbies__name">Java</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="skillshobbies__container">
+        <div>
+          <p class="skillshobbies__title">Hobbies</p>
+        </div>
+        <div class="skillshobbies__content">
+          <ul class="skillshobbies__cards">
+            <li class="skillshobbies__card">
+              <div class="skillshobbies__description">
+                <i class="fa-solid fa-dragon skillshobbies__icon"></i>
+                <p class="skillshobbies__name">E-Sports</p>
+              </div>
+            </li>
+            <li class="skillshobbies__card">
+              <div class="skillshobbies__description">
+                <i
+                  class="fa-solid fa-person-snowboarding skillshobbies__icon"
+                ></i>
+                <p class="skillshobbies__name">Surf</p>
+              </div>
+            </li>
+            <li class="skillshobbies__card">
+              <div class="skillshobbies__description">
+                <i
+                  class="fa-solid fa-table-tennis-paddle-ball skillshobbies__icon"
+                ></i>
+                <p class="skillshobbies__name">Tenis de Mesa</p>
+              </div>
+            </li>
+            <li class="skillshobbies__card">
+              <div class="skillshobbies__description">
+                <i class="fa-solid fa-futbol skillshobbies__icon"></i>
+                <p class="skillshobbies__name">Futebol</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="courses__container">
+        <div class="courses__title">
+          <p class="title__text">Formação Academica</p>
+        </div>
+        <ul>
+          <li>
+            <div class="courses__cards">
+              <img src="./assets/images/Alura.png" alt="Logo Alura" />
+            </div>
+            <div class="courses__description">
+              <p class="course__name">Alura Oracle Next Education II
+              <p class="course__year">2022 - ALURA</p>
+            </div>
+          </li>
+          <li>
+            <div class="courses__cards">
+              <img src="./assets/images/Univasf.png" alt="Logo UESC" />
+            </div>
+            <div class="courses__description">
+              <p class="course__name">Contemporaneidade, <br>Educação e Tecnologia</p>
+              <p class="course__year">2016 - UNIVASF</p>
+            </div>
+          </li>
+          <li>
+
+            <div class="courses__cards">
+              <img src="./assets/images/UESC.png" alt="Logo UESC" />
+            </div>
+            <div class="courses__description">
+              <p class="course__name">Licenciatura em Física</p>
+              <p class="course__year">2014 - UESC</p>
+            </div>
+          </li>
+          <li>
+
+            <div class="courses__cards">
+              <img src="./assets/images/Senac.png" alt="Logo UESC" />
+            </div>
+            <div class="courses__description">
+              <p class="course__name">COBOL <br>Programação em Linguagem Estruturada</p>
+              <p class="course__year">1984 - SENAC SP</p>
+            </div>
+          </li>
+        </ul>
+
+      </section>
+
+      <section class="courses__container">
+        <div class="courses__title">
+          <p class="title__text">Experiência Profissional</p>
+        </div>
+        <div class="cripto">
+          <div class="cripto__image">
+            <img src="./assets/images/Cripto.png" alt="Cripto" />
+          </div>
+          <div class="cripto__buttons">
+            <h1>Decodificador de Texto</h1>
+            <h4>Challenge Alura Decodificador</h4>
+            <a href="#">Repositorio</a>
+            <a href="#">Ver demo</a>
+          </div>
+        </div>
+        <div class="cripto">
+          <div class="cripto__buttons">
+            <h1>Jogo criado com HTML, CSS e JavaScript</h1>
+            <h4>Challenge Oracle</h4>
+            <a href="#">Repositorio</a>
+            <a href="#">Ver demo</a>
+          </div>
+          <div class="cripto__image">
+            <img src="./assets/images/Forca.png" alt="Jogo da Forca" />
+          </div>
+        </div>
+
+        <div class="cripto">
+          <div class="cripto__image">
+            <img src="./assets/images/CriptoFields.png" alt="Cripto Final" />
+          </div>
+          <div class="cripto__buttons">
+            <h1>Decodificador de Texto</h1>
+            <h4>Challenge Alura Decodificador</h4>
+            <a href="#">Repositorio</a>
+            <a href="#">Ver demo</a>
+          </div>
+        </div>
+        <div class="cripto">
+          <div class="cripto__buttons">
+            <h1>Jogo criado com HTML, CSS e JavaScript</h1>
+            <h4>Challenge Oracle</h4>
+            <a href="#">Repositorio</a>
+            <a href="#">Ver demo</a>
+          </div>
+          <div class="cripto__image">
+            <img src="./assets/images/ForcaFields.png" alt="Jogo da Forca Final" />
+          </div>
+        </div>
+
+        <div class="cripto">
+          <div class="cripto__image">
+            <img src="./assets/images/Contact.png" alt="Contact" />
+          </div>
+          <div class="cripto__buttons">
+            <h1>Contato</h1>
+            <h4>Challenge Alura Decodificador</h4>
+            <a href="#">Repositorio</a>
+            <a href="#">Ver demo</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
     <footer>
-        Rodapé
+      <h1>Desenvolvido por Antonio Alves do Rosario Junior - 2022</h1>
     </footer>
-</body>
+  </body>
 </html>

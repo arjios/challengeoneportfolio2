@@ -1,0 +1,66 @@
+.skillshobbies__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.skillshobbies__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #464646;
+  margin: 2rem 0 2rem 0;
+}
+
+.skillshobbies__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillshobbies__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillshobbies__card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 176px;
+  height: 174px;
+}
+
+.skillshobbies__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin: 16px;
+  width: 150px;
+  height: 160px;
+  background: #ffffff;
+}
+
+.skillshobbies__icon {
+  margin-left: .5em;
+  color: #2a7ae4;
+}
+
+.skillshobbies__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  margin-left: .5em;
+  color: #464646; 
+  background: #ffffff;
+}
