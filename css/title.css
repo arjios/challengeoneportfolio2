@@ -1,0 +1,47 @@
+.title__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+
+}
+
+.text {
+    font-display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title__text {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #464646;
+}
+
+.subtitle__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #464646;
+}
+
+.courses__content {
+  display: flex;
+  justify-content: center;
+}
+
+.courses__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.buttons__projects {
+  margin-top: 10px;
+  padding: 26px;
+  gap: 10px;
+  width: 100px;
+  height: 51px;
+  background: #2a7ae4;
+}

@@ -7,10 +7,12 @@
     <script src="./assets/fontawesome/js/all.min.js"></script>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/title.css" />
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/me.css" />
     <link rel="stylesheet" href="./css/skillshobbies.css" />
     <link rel="stylesheet" href="./css/courses.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
     <title>Challenge One Portfolio II</title>
   </head>
   <body>
@@ -21,12 +23,14 @@
       </section>
       <nav class="header__navbar">
         <ul class="navbar__itens">
-          <li class="navbar__item"><a href="#">Sobre mim</a></li>
-          <li class="navbar__item"><a href="#">Skills</a></li>
-          <li class="navbar__item"><a href="#">Hobbies</a></li>
-          <li class="navbar__item"><a href="#">Formação</a></li>
-          <li class="navbar__item"><a href="#">Projetos</a></li>
-          <li class="navbar__contact"><a href="#">antonio@alura.com</a></li>
+          <li class="navbar__item"><a href="#about_me">Sobre mim</a></li>
+          <li class="navbar__item"><a href="#mySkills">Skills</a></li>
+          <li class="navbar__item"><a href="#myHobbies">Hobbies</a></li>
+          <li class="navbar__item"><a href="#myFormation">Formação</a></li>
+          <li class="navbar__item"><a href="#myProjects">Projetos</a></li>
+          <li class="navbar__contact">
+            <a href="#myContact">antonio@alura.com</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -56,11 +60,15 @@
           </ul>
         </div>
         <div class="about__photo">
-          <img src="./assets/images/photoMobile.png" alt="Photo" class="about__img" />
+          <img
+            src="./assets/images/photoMobile.png"
+            alt="Photo"
+            class="about__img"
+          />
         </div>
       </section>
 
-      <section class="me">
+      <section class="me" id="about_me">
         <div class="me__container">
           <p class="me__title">Sobre mim</p>
           <p class="me__description">
@@ -84,7 +92,7 @@
         </div>
       </section>
 
-      <section class="skillshobbies__container">
+      <section class="title__container" id="mySkills">
         <div>
           <p class="skillshobbies__title">Skills</p>
         </div>
@@ -124,7 +132,7 @@
         </div>
       </section>
 
-      <section class="skillshobbies__container">
+      <section class="title__container" id="myHobbies">
         <div>
           <p class="skillshobbies__title">Hobbies</p>
         </div>
@@ -162,7 +170,7 @@
         </div>
       </section>
 
-      <section class="courses__container">
+      <section class="courses__container" id="myFormation">
         <div class="courses__title">
           <p class="title__text">Formação Academica</p>
         </div>
@@ -172,7 +180,7 @@
               <img src="./assets/images/Alura.png" alt="Logo Alura" />
             </div>
             <div class="courses__description">
-              <p class="course__name">Alura Oracle Next Education II
+              <p class="course__name">Alura Oracle Next Education II</p>
               <p class="course__year">2022 - ALURA</p>
             </div>
           </li>
@@ -181,12 +189,13 @@
               <img src="./assets/images/Univasf.png" alt="Logo UESC" />
             </div>
             <div class="courses__description">
-              <p class="course__name">Contemporaneidade, <br>Educação e Tecnologia</p>
+              <p class="course__name">
+                Contemporaneidade, <br />Educação e Tecnologia
+              </p>
               <p class="course__year">2016 - UNIVASF</p>
             </div>
           </li>
           <li>
-
             <div class="courses__cards">
               <img src="./assets/images/UESC.png" alt="Logo UESC" />
             </div>
@@ -196,86 +205,153 @@
             </div>
           </li>
           <li>
-
             <div class="courses__cards">
               <img src="./assets/images/Senac.png" alt="Logo UESC" />
             </div>
             <div class="courses__description">
-              <p class="course__name">COBOL <br>Programação em Linguagem Estruturada</p>
+              <p class="course__name">
+                COBOL <br />Programação em Linguagem Estruturada
+              </p>
               <p class="course__year">1984 - SENAC SP</p>
             </div>
           </li>
         </ul>
-
       </section>
 
-      <section class="courses__container">
-        <div class="courses__title">
-          <p class="title__text">Experiência Profissional</p>
-        </div>
-        <div class="cripto">
-          <div class="cripto__image">
-            <img src="./assets/images/Cripto.png" alt="Cripto" />
+      <section class="projects__container" id="myProjects">
+          <div class="projects__title">
+            <div class="title__content">
+              <p class="title__text">Experiência Profissional</p>
+            </div>
           </div>
-          <div class="cripto__buttons">
-            <h1>Decodificador de Texto</h1>
-            <h4>Challenge Alura Decodificador</h4>
-            <a href="#">Repositorio</a>
-            <a href="#">Ver demo</a>
-          </div>
-        </div>
-        <div class="cripto">
-          <div class="cripto__buttons">
-            <h1>Jogo criado com HTML, CSS e JavaScript</h1>
-            <h4>Challenge Oracle</h4>
-            <a href="#">Repositorio</a>
-            <a href="#">Ver demo</a>
-          </div>
-          <div class="cripto__image">
-            <img src="./assets/images/Forca.png" alt="Jogo da Forca" />
-          </div>
-        </div>
 
-        <div class="cripto">
-          <div class="cripto__image">
-            <img src="./assets/images/CriptoFields.png" alt="Cripto Final" />
+            <div class="projects__content">
+            <div class="image__content">
+              <img
+                class="image"
+                src="./assets/images/Cripto.png"
+                alt="Criptador"
+              />
+            </div>
+            <div class="description">
+              <div class="text__description">
+                <p class="text__main">Decodificador de Texto</p>
+                <p class="text__sub">Challenge Alura Codificador</p>
+              </div>
+              <div class="description__buttons">
+                <a href="#" class="button__repositorio"> Repositorio </a>
+                <a href="#" class="button__demo"> Demo </a>
+              </div>
+            </div>
+  
           </div>
-          <div class="cripto__buttons">
-            <h1>Decodificador de Texto</h1>
-            <h4>Challenge Alura Decodificador</h4>
-            <a href="#">Repositorio</a>
-            <a href="#">Ver demo</a>
-          </div>
-        </div>
-        <div class="cripto">
-          <div class="cripto__buttons">
-            <h1>Jogo criado com HTML, CSS e JavaScript</h1>
-            <h4>Challenge Oracle</h4>
-            <a href="#">Repositorio</a>
-            <a href="#">Ver demo</a>
-          </div>
-          <div class="cripto__image">
-            <img src="./assets/images/ForcaFields.png" alt="Jogo da Forca Final" />
-          </div>
-        </div>
 
-        <div class="cripto">
-          <div class="cripto__image">
-            <img src="./assets/images/Contact.png" alt="Contact" />
+
+
+          <div class="projects__content">
+            <div class="description">
+              <div class="text__description">
+                <p class="text__main">Decodificador de Texto</p>
+                <p class="text__sub">Challenge Alura Codificador</p>
+              </div>
+              <div class="description__buttons">
+                <a href="#" class="button__repositorio"> Repositorio </a>
+                <a href="#" class="button__demo"> Demo </a>
+              </div>
+            </div>
+
+              <div class="image__content">
+                <img
+                  class="image"
+                  src="./assets/images/CriptoFields.png"
+                  alt="Criptador"
+                />
+              </div>
+
           </div>
-          <div class="cripto__buttons">
-            <h1>Contato</h1>
-            <h4>Challenge Alura Decodificador</h4>
-            <a href="#">Repositorio</a>
-            <a href="#">Ver demo</a>
+
+          
+
+          <div class="projects__content">
+            <div class="image__content">
+              <img
+                class="image"
+                src="./assets/images/Forca.png"
+                alt="Criptador"
+              />
+            </div>
+            <div class="description">
+              <div class="text__description">
+                <p class="text__main">Jogo criado com HTML e JavaScript</p>
+                <p class="text__sub">Challenge Oracle</p>
+              </div>
+              <div class="description__buttons">
+                <a href="#" class="button__repositorio"> Repositorio </a>
+                <a href="#" class="button__demo"> Demo </a>
+              </div>
+            </div>
           </div>
+
+          <div class="projects__content">
+            <div class="description">
+              <div class="text__description">
+                <p class="text__main">Jogo criado com HTML e JavaScript</p>
+                <p class="text__sub">Challenge Oracle</p>
+              </div>
+              <div class="description__buttons">
+                <a href="#" class="button__repositorio"> Repositorio </a>
+                <a href="#" class="button__demo"> Demo </a>
+              </div>
+            </div>
+
+              <div class="image__content">
+                <img
+                  class="image"
+                  src="./assets/images/ForcaFields.png"
+                  alt="Criptador"
+                />
+              </div>
+          </div>
+
         </div>
       </section>
 
+      <section class="courses__content" id="myContact">
+        <div class="courses__content" id="#myContact">
+          <div class="projects__content">
+            <div class="image__content">
+              <img
+                class="image"
+                src="./assets/images/Contact.png"
+                alt="Criptador"
+              />
+            </div>
+            <div class="description">
+              <div class="text__description">
+                <p class="text__contact">Contato</p>
+                <p class="text__sub">Quer entrar em contato comigo?<br>
+                  Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
+
+              <form class="text__description">
+                <input type="text" placeholder="name" class="contact__input">
+                <input type="email" placeholder="email" class="contact__input">
+                <input type="text" placeholder="assunto" class="contact__input">
+                <input type="text" placeholder="mensagem" class="contact__input">
+
+              <div class="description__buttons">
+                <a href="#" class="button__submit"> Enviar mensagem </a>
+              </div>
+            </form>
+          </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <h1>Desenvolvido por Antonio Alves do Rosario Junior - 2022</h1>
+    <footer class="rodape__container">
+      <h1>Desenvolvido por Antonio Alves do Rosario Junior<br>2022</h1>
     </footer>
   </body>
 </html>
