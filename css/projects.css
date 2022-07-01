@@ -5,7 +5,7 @@
   flex-direction: column;
   margin-left: 32px;
   margin-bottom: 53px;
-  background-color: ##f5f5f5;
+  background-color: #f5f5f5
 }
 
 .projects__content {
@@ -125,6 +125,21 @@
   border-radius: 4px;
 }
 
+.contact__area {
+  width: 656px;
+  margin-top: 32px;
+  resize: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #464646;
+  border: none;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
 .button__submit {
   display: flex;
   justify-content: center;
@@ -135,8 +150,14 @@
   width: 165px;
   height: 51px;
   color: #ffffff;
-  margin-top: 32px;
+  margin-top: 28px;
   background-color: #2a7ae4;
+}
+
+.button__submit:disabled {
+  color: #bbbbbb;
+  background-color: #cccccc;
+  border: none;
 }
 
 .rodape__container {

@@ -19,7 +19,7 @@
     <header class="header__container">
       <section class="header__content">
         <img src="./assets/images/Group.png" alt="Logo" />
-        <spam class="header__title">Fulano de Tal</spam>
+        <spam class="header__title">Antonio Alves</spam>
       </section>
       <nav class="header__navbar">
         <ul class="navbar__itens">
@@ -38,11 +38,11 @@
       <section class="about">
         <div class="about_hello">
           <p class="about__title">
-            Olá, meu nome é Fulana de Tal e construo páginas web
+            Olá, meu nome é Antonio e construo páginas web
           </p>
           <p class="about__subtitle">
-            Eu sou formada em lorem ipsum sit amet consectetur e atualmente
-            estou participando no projeto Oracle ONE na Alura.
+            Eu sou formado em Licenciatura em Física e atualmente
+            participo do projeto Oracle ONE na Alura.
           </p>
           <ul class="about__links">
             <li class="about__link">
@@ -61,7 +61,7 @@
         </div>
         <div class="about__photo">
           <img
-            src="./assets/images/photoMobile.png"
+            src="./assets/images/iPhoto.jpg"
             alt="Photo"
             class="about__img"
           />
@@ -333,13 +333,12 @@
                   Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
 
               <form class="text__description">
-                <input type="text" placeholder="name" class="contact__input">
-                <input type="email" placeholder="email" class="contact__input">
-                <input type="text" placeholder="assunto" class="contact__input">
-                <input type="text" placeholder="mensagem" class="contact__input">
-
+                <input type="text" id="inputName" minlength="1" maxlength="50" placeholder="Name" class="contact__input" autofocus>
+                <input type="email" id="inputEmail" minlength="6" maxlength="80" placeholder="Email" class="contact__input">
+                <input type="text" id="inputAssunto" minlength="1" maxlength="50" placeholder="Assunto" class="contact__input">
+                <textarea id="inputMensagem" cols="30" rows="6" minlength="1" maxlength="300" placeholder="Mensagem" class="contact__area"></textarea>
               <div class="description__buttons">
-                <a href="#" class="button__submit"> Enviar mensagem </a>
+                <button id="submitButton" class="button__submit" disabled> Enviar mensagem </button>
               </div>
             </form>
           </div>
@@ -354,4 +353,5 @@
       <h1>Desenvolvido por Antonio Alves do Rosario Junior<br>2022</h1>
     </footer>
   </body>
+  <script src="./assets/js/insert.js"></script>
 </html>
